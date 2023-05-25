@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Joselu</title>
+</head>
+<body>
+    <header class="header wrapper">
+        <a href="#" class="header__logo">Joselu</a>
+        <nav class="nav" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Inicio</a>
+                </li>
+                <!-- <li class="nav__item">
+                    <a href="#" class="nav__link">Sobre mi</a>
+                </li> -->
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Habilidades</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Proyectos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Contacto</a>
+                </li>
+            </ul>
+            <ul class="social">
+                <li class="social__li">
+                    <a href="#" class="social__a">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter social__i" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__li">
+                    <a href="#" class="social__a">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github social__i" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__li">
+                    <a href="#" class="social__a">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin social__i" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__li">
+                    <a href="#" class="social__a">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-discord social__i" viewBox="0 0 16 16">
+                            <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__li">
+                    <a href="#" class="social__a">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitch social__i" viewBox="0 0 16 16">
+                            <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+                            <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+
+            <div class="nav__close" id="nav-close">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+            </div>
+        </nav>
+        <div class="header__toggle" id="header-tggle">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        </div>
+    </header>
+
+    <main>
+        <!--HOME SECTION-->
+        <section class="home wrapper">
+            <div class="home__img">
+                <img src="assets/images/bmws1000r.jpg" alt="moto bmw s1000r" class="home__image">
+            </div>
+            <div class="home__content">
+                <p class="home__wellcome">Bienvenido a mi mundo</p>
+                <h2 class="home__title">Hola!, Soy Jose Luis un <span class="home__span">Frontend Developer</span></h2>
+                <p class="home__description">I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways that.</p>
+                <div class="skills">
+                    <h3 class="skills__title">BEST SKILL ON</h3>
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-filetype-css skills__html" viewBox="0 0 384 512"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg>
+                        </li>
+                        <li class="skills__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-filetype-css skills__css" viewBox="0 0 384 512"><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
+                        </li>
+                        <li class="skills__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-filetype-css skills__js" viewBox="0 0 448 512"><path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!--SKILL SECTION-->
+        <section class="skill wrapper">
+            <h2 class="skill__title">Habilidades</h2>
+            <div class="cards">
+                <section class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-filetype-html card__img card__img--html" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+                    </svg>
+                    <div class="card__content">
+                        <h3 class="card__description">HTML</h3>
+                    </div>
+                </section>
+                <section class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-filetype-css card__img card__img--css" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.397 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495ZM6.78 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.187.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Z"/>
+                      </svg>
+                    <div class="card__content">
+                        <h3 class="card__description">CSS</h3>
+                    </div>
+                </section>
+                <section class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-filetype-sass card__img card__img--sass" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.41 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384.81.81 0 0 0 .25.114c.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.506.506 0 0 0 .084-.29.387.387 0 0 0-.152-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.352-.367 1.068 1.068 0 0 1-.123-.524c0-.244.064-.457.19-.639.128-.181.304-.322.528-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.185.384c0 .121.048.22.144.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm4.188-.387-.313 1.028h-.8l1.342-3.999h.926l1.335 4h-.84l-.314-1.03H5.598Zm1.178-.59-.49-1.616h-.034l-.49 1.617h1.014Zm1.352.528a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.002 1.002 0 0 0-.375-.357 2.028 2.028 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.623.623 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.093 1.093 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.552.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.558.558 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765Zm3.503.449a1.178 1.178 0 0 1-.111-.449h.764a.58.58 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.558.558 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1.002 1.002 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.623.623 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158a2.19 2.19 0 0 1-.665-.09 1.404 1.404 0 0 1-.478-.252 1.131 1.131 0 0 1-.29-.375Z"/>
+                    </svg>
+                    <div class="card__content">
+                        <h3 class="card__description">SASS</h3>
+                    </div>
+                </section>
+                <section class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-filetype-js card__img card__img--js" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"/>
+                    </svg>
+                    <div class="card__content">
+                        <h3 class="card__description">JAVASCRIPT</h3>
+                    </div>
+                </section>
+                <section class="card">
+                    <svg  xmlns="http://www.w3.org/2000/svg" 
+	                    viewBox="0 0 32 32"  fill="currentColor" class="card__docker">
+                        <path id="docker_1_" d="M12.75,22c0,0.414-0.336,0.75-0.75,0.75s-0.75-0.336-0.75-0.75s0.336-0.75,0.75-0.75S12.75,21.586,12.75,22z
+	 M27.814,17.26h0.215c1.345,0,2.603-0.719,3.281-1.875c0.066-0.112,0.066-0.252,0-0.364c-0.613-1.044-1.664-1.718-2.857-1.848
+	c-0.111-1.225-0.83-2.331-1.932-2.939c-0.107-0.061-0.239-0.061-0.349,0c-1.2,0.665-1.946,1.919-1.946,3.273
+	c0,0.768,0.241,1.514,0.679,2.138H22.36V12c0-0.199-0.161-0.36-0.36-0.36h-3.64V4c0-0.199-0.161-0.36-0.36-0.36h-4
+	c-0.199,0-0.36,0.161-0.36,0.36v3.64H10C9.801,7.64,9.64,7.801,9.64,8v3.64H6c-0.199,0-0.36,0.161-0.36,0.36v3.642H1l0,0
+	c-0.096,0-0.187,0.038-0.254,0.105c-0.068,0.067-0.105,0.159-0.105,0.254v0.898c0,2.826,1.148,5.394,3.011,7.277
+	c0.033,0.058,0.081,0.105,0.139,0.138c1.929,1.882,4.586,3.046,7.516,3.046C20.144,27.36,27.121,21.447,27.814,17.26z
+	 M10.047,23.647c0.19-0.057,0.299-0.257,0.243-0.447s-0.256-0.301-0.448-0.242c-1.425,0.423-3.499,0.67-5.71,0.682
+	C2.416,21.889,1.36,19.513,1.36,16.9v-0.539l24.34,0.003l0,0c0.148,0,0.282-0.091,0.336-0.23s0.017-0.296-0.094-0.396
+	c-0.633-0.574-0.995-1.387-0.995-2.231c0-1.026,0.531-1.981,1.4-2.54c0.869,0.558,1.4,1.513,1.4,2.54v0.004
+	c0,0.196,0.156,0.355,0.353,0.36c1.005,0.022,1.915,0.517,2.474,1.333c-0.57,0.83-1.526,1.337-2.545,1.337h-0.531
+	c-0.187,0-0.343,0.143-0.358,0.329c-0.337,3.844-7.287,9.771-15.834,9.771c-2.438,0-4.673-0.863-6.404-2.294
+	C6.889,24.287,8.727,24.039,10.047,23.647z M18.36,12.36h3.279v3.28H18.36V12.36z M14.36,12.36h3.28v3.28h-3.28V12.36z M10.36,12.36
+	h3.28v3.28h-3.28V12.36z M6.36,12.36h3.28v3.28H6.36V12.36z M14.36,8.36h3.28v3.28h-3.28V8.36z M10.36,8.36h3.28v3.28h-3.28V8.36z
+	                        M14.36,4.36h3.28v3.28h-3.28V4.36z"/>
+                    </svg>
+                    <div class="card__content">
+                        <h3 class="card__description">DOCKER</h3>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!--PORTFOLIO SECTION-->
+        <section class="portfolio wrapper">
+            <h2 class="portfolio__tile"> Mi Portfolio</h2>
+            <div class="portfolio-cards">
+                <!--PROYECT 1-->
+                <article class="portfolio-card">
+                    <img src="assets/images/bmws1000r.jpg" alt="" class="portfolio-card__img">
+                    <div class="portfolio-card__content">
+                        <div class="portfolio-card__links">
+                            <!-- <h3 class="portfolio-card__title">Carrito de compras</h3> -->
+                            <a href="#" class="portfolio-card__link">Demo</a>
+                            <a href="#" class="portfolio-card__link">Código</a>
+                        </div>
+                        <p class="portfolio-card__description">Simulamos un carrito de compras</p>
+                        <button class="portfolio-card__buttom">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-lg portfolio-card__icon" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                              </svg>
+                        </button>
+                    </div>
+                    <!--MODAL SECTION -->
+                    <div class="portfolio__modal">
+                        <div class="portfolio__modal-content">
+                            <h4 class="portfolio__modal-title">En este proyecto practicamos la simulación de un carrito de compras sin back</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x portfolio__modal-close" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                            <ul class="portfolio__modal-infos">
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Arrays y sus metodos</p>
+                                </li>
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Obejos y Destructuring de objetos</p>
+                                </li>
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Eventos y como jugar con dichos eventos</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <!--PROYECT 2-->
+                <article class="portfolio-card">
+                    <img src="assets/images/bmws1000r.jpg" alt="" class="portfolio-card__img">
+                    <div class="portfolio-card__content">
+                        <div class="portfolio-card__links">
+                            <!-- <h3 class="portfolio-card__title">Carrito de compras</h3> -->
+                            <a href="#" class="portfolio-card__link">Demo</a>
+                            <a href="#" class="portfolio-card__link">Código</a>
+                        </div>
+                        <p class="portfolio-card__description">Simulamos un carrito de compras</p>
+                        <button class="portfolio-card__buttom">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-lg portfolio-card__icon" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                              </svg>
+                        </button>
+                    </div>
+                    <!--MODAL SECTION -->
+                    <div class="portfolio__modal">
+                        <div class="portfolio__modal-content">
+                            <h4 class="portfolio__modal-title">En este proyecto practicamos la simulación de un carrito de compras sin back</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x portfolio__modal-close" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                            <ul class="portfolio__modal-infos">
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Arrays y sus metodos</p>
+                                </li>
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Obejos y Destructuring de objetos</p>
+                                </li>
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Eventos y como jugar con dichos eventos</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <!--PROYECT 3-->
+                <article class="portfolio-card">
+                    <img src="assets/images/bmws1000r.jpg" alt="" class="portfolio-card__img">
+                    <div class="portfolio-card__content">
+                        <div class="portfolio-card__links">
+                            <!-- <h3 class="portfolio-card__title">Carrito de compras</h3> -->
+                            <a href="#" class="portfolio-card__link">Demo</a>
+                            <a href="#" class="portfolio-card__link">Código</a>
+                        </div>
+                        <p class="portfolio-card__description">Simulamos un carrito de compras</p>
+                        <button class="portfolio-card__buttom">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-lg portfolio-card__icon" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                              </svg>
+                        </button>
+                    </div>
+                    <!--MODAL SECTION -->
+                    <div class="portfolio__modal">
+                        <div class="portfolio__modal-content">
+                            <h4 class="portfolio__modal-title">En este proyecto practicamos la simulación de un carrito de compras sin back</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x portfolio__modal-close" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                            <ul class="portfolio__modal-infos">
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Arrays y sus metodos</p>
+                                </li>
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Obejos y Destructuring de objetos</p>
+                                </li>
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Eventos y como jugar con dichos eventos</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <!--PROYECT 4-->
+                <article class="portfolio-card">
+                    <img src="assets/images/bmws1000r.jpg" alt="" class="portfolio-card__img">
+                    <div class="portfolio-card__content">
+                        <div class="portfolio-card__links">
+                            <!-- <h3 class="portfolio-card__title">Carrito de compras</h3> -->
+                            <a href="#" class="portfolio-card__link">Demo</a>
+                            <a href="#" class="portfolio-card__link">Código</a>
+                        </div>
+                        <p class="portfolio-card__description">Simulamos un carrito de compras</p>
+                        <button class="portfolio-card__buttom">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-lg portfolio-card__icon" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                              </svg>
+                        </button>
+                    </div>
+                    <!--MODAL SECTION -->
+                    <div class="portfolio__modal">
+                        <div class="portfolio__modal-content">
+                            <h4 class="portfolio__modal-title">En este proyecto practicamos la simulación de un carrito de compras sin back</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x portfolio__modal-close" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                            <ul class="portfolio__modal-infos">
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Arrays y sus metodos</p>
+                                </li>
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Obejos y Destructuring de objetos</p>
+                                </li>
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Eventos y como jugar con dichos eventos</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <!--PROYECT 5-->
+                <article class="portfolio-card">
+                    <img src="assets/images/bmws1000r.jpg" alt="" class="portfolio-card__img">
+                    <div class="portfolio-card__content">
+                        <div class="portfolio-card__links">
+                            <!-- <h3 class="portfolio-card__title">Carrito de compras</h3> -->
+                            <a href="#" class="portfolio-card__link">Demo</a>
+                            <a href="#" class="portfolio-card__link">Código</a>
+                        </div>
+                        <p class="portfolio-card__description">Simulamos un carrito de compras</p>
+                        <button class="portfolio-card__buttom">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-lg portfolio-card__icon" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                              </svg>
+                        </button>
+                    </div>
+                    <!--MODAL SECTION -->
+                    <div class="portfolio__modal">
+                        <div class="portfolio__modal-content">
+                            <h4 class="portfolio__modal-title">En este proyecto practicamos la simulación de un carrito de compras sin back</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x portfolio__modal-close" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                            <ul class="portfolio__modal-infos">
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Arrays y sus metodos</p>
+                                </li>
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Obejos y Destructuring de objetos</p>
+                                </li>
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Eventos y como jugar con dichos eventos</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <!--PROYECT 6-->
+                <article class="portfolio-card">
+                    <img src="assets/images/bmws1000r.jpg" alt="" class="portfolio-card__img">
+                    <div class="portfolio-card__content">
+                        <div class="portfolio-card__links">
+                            <!-- <h3 class="portfolio-card__title">Carrito de compras</h3> -->
+                            <a href="#" class="portfolio-card__link">Demo</a>
+                            <a href="#" class="portfolio-card__link">Código</a>
+                        </div>
+                        <p class="portfolio-card__description">Simulamos un carrito de compras</p>
+                        <button class="portfolio-card__buttom">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-lg portfolio-card__icon" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                              </svg>
+                        </button>
+                    </div>
+                    <!--MODAL SECTION -->
+                    <div class="portfolio__modal">
+                        <div class="portfolio__modal-content">
+                            <h4 class="portfolio__modal-title">En este proyecto practicamos la simulación de un carrito de compras sin back</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x portfolio__modal-close" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                            <ul class="portfolio__modal-infos">
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Arrays y sus metodos</p>
+                                </li>
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Obejos y Destructuring de objetos</p>
+                                </li>
+                                <li class="portfolio__modal-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check portfolio__modal-icon" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                    </svg>
+                                    <p class="portfolio__modal-p">Eventos y como jugar con dichos eventos</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+            
+        </section>
+        <!--CONTACT SECTION-->
+        <section class="contact wrapper">
+            <h2 class="contact__title">Contactame</h2>
+
+            <form action="post" class="form">
+                Nombre:
+                <input name="nombre" type="text" class="form__input">
+                Email:
+                <input type="email" class="form__input">
+                Asunto:
+                <input type="text" class="form__input">
+                Mensaje
+                <textarea id="text-area" cols="30" rows="10" class="form__area"></textarea>
+                <button class="form__buttom">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#" class="footer__logo">Joselu</a>
+        <ul class="social social--row">
+            <li class="social__li">
+                <a href="#" class="social__a">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter social__i social__i--small" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__li">
+                <a href="#" class="social__a">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github social__i social__i--small" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__li">
+                <a href="#" class="social__a">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin social__i social__i--small" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__li">
+                <a href="#" class="social__a">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-discord social__i social__i--small" viewBox="0 0 16 16">
+                        <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__li">
+                <a href="#" class="social__a">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitch social__i social__i--small" viewBox="0 0 16 16">
+                        <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+                        <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
