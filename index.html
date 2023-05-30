@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Joselu</title>
+    <meta
+      name="description"
+      content="Explora mi portfolio y descubre mi pasión por el desarrollo web!"
+    />
   </head>
   <body>
     <header class="header">
@@ -20,16 +24,16 @@
         <nav class="nav" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">Inicio</a>
+              <a href="#home" class="nav__link">Inicio</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Habilidades</a>
+              <a href="#ability" class="nav__link">Habilidades</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Proyectos</a>
+              <a href="#proyects" class="nav__link">Proyectos</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Contacto</a>
+              <a href="#contact" class="nav__link">Contacto</a>
             </li>
           </ul>
           <ul class="social social-nav">
@@ -108,7 +112,7 @@
 
     <main>
       <!--HOME SECTION-->
-      <section class="home wrapper">
+      <section class="home wrapper" id="home">
         <div class="home__img">
           <img
             src="assets/images/bmws1000r.jpg"
@@ -221,7 +225,7 @@
       </section>
 
       <!--SKILL SECTION-->
-      <section class="skill wrapper">
+      <section class="skill wrapper" id="ability">
         <h2 class="skill__title">Habilidades</h2>
         <div class="cards">
           <section class="card">
@@ -474,7 +478,7 @@
       </section>
 
       <!--PORTFOLIO SECTION-->
-      <section class="portfolio wrapper">
+      <section class="portfolio wrapper" id="proyects">
         <h2 class="portfolio__tile">Proyectos</h2>
         <div class="portfolio-cards">
           <!--PROYECT 1-->
@@ -1191,7 +1195,7 @@
         </div>
       </section>
       <!--CONTACT SECTION-->
-      <section class="contact wrapper">
+      <section class="contact wrapper" id="contact">
         <h2 class="contact__title">Contacto</h2>
 
         <form action="post" class="form" autocomplete="on">
