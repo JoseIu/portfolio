@@ -492,6 +492,7 @@
               </div>
               <p class="portfolio-card__description">Gestor de pacientes</p>
               <button class="portfolio-card__buttom">
+                Info
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -597,6 +598,7 @@
                 Buscador de Usuarios con React
               </p>
               <button class="portfolio-card__buttom">
+                Info
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -698,6 +700,7 @@
               </div>
               <p class="portfolio-card__description">Carrito - React</p>
               <button class="portfolio-card__buttom">
+                Info
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -797,6 +800,7 @@
               </div>
               <p class="portfolio-card__description">Carrito - Js Vanilla</p>
               <button class="portfolio-card__buttom">
+                Info
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -900,6 +904,7 @@
               </div>
               <p class="portfolio-card__description">Buscador de Recetas-API</p>
               <button class="portfolio-card__buttom">
+                Info
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -1005,6 +1010,7 @@
                 Buscador de GIFS con React
               </p>
               <button class="portfolio-card__buttom">
+                Info
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -1108,6 +1114,7 @@
               </div>
               <p class="portfolio-card__description">Restarante - Al-andalus</p>
               <button class="portfolio-card__buttom">
+                Info
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -1187,16 +1194,38 @@
       <section class="contact wrapper">
         <h2 class="contact__title">Contacto</h2>
 
-        <form action="post" class="form">
-          Nombre:
-          <input name="nombre" type="text" class="form__input" />
-          Email:
-          <input type="email" class="form__input" />
-          Asunto:
-          <input type="text" class="form__input" />
-          Mensaje
+        <form action="post" class="form" autocomplete="on">
+          <label for="name">Nombre:</label>
+          <input
+            name="name"
+            type="text"
+            class="form__input"
+            id="name"
+            autocomplete="on"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            name="email"
+            type="email"
+            class="form__input"
+            id="email"
+            autocomplete="on"
+          />
+
+          <label for="asunto">Asunto:</label>
+          <input
+            name="asunto"
+            type="text"
+            class="form__input"
+            id="asunto"
+            autocomplete="on"
+          />
+
+          <label for="mesanje">Mensaje</label>
           <textarea
-            id="text-area"
+            id="mesanje"
+            name="mesanje"
             cols="30"
             rows="10"
             class="form__area"
